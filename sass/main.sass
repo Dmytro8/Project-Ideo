@@ -1,0 +1,1020 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+  	//font-size: 16px
+  	min-width: 320px
+  	position: relative
+  	//line-height: 1.65
+  	overflow-x: hidden
+  	input, textarea
+	  	border: #666 1px solid
+	  	outline: none
+	  	&:focus:required:invalid
+		  	border-color: red
+	  	&:required:valid
+		  	border-color: green
+button
+  	outline: none
+  	border: none
+  	padding: 0
+  	margin: 0
+  	background-color: transparent
+
+h1,h2,h3,h4,h5,h6
+	margin: 0
+
+p
+	margin: 0
+	padding: 0
+
+button:active, button:focus
+	outline: none
+	border: none
+	padding: 0
+	margin: 0
+	background-color: transparent
+
+.for-tablet
+  	display: none
+.for-mobile
+	display: none
+
+button::-moz-focus-inner
+	outline: none
+	border: none
+	padding: 0
+	margin: 0
+	background-color: transparent
+
+.max_width_1400
+  	display: none
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.container
+	width: 1000px
+	z-index: 1
+	padding: 0
+	transition: all 0.5s ease-in-out
+
+li
+  	list-style-type: none
+
+.uppercase
+  	text-transform: uppercase
+
+.capitalize
+	text-transform: capitalize
+
+nav
+  div.container
+	  display: flex
+	  justify-content: center
+nav
+	height: 88px
+	z-index: 10
+	background-color: #023a5c
+	width: 100%
+	display: flex
+	justify-content: center
+	text-transform: capitalize
+	border-bottom: 1px solid #33667c
+	a
+		img
+			float: left
+			background: #fff
+			padding: 19px 31px
+			box-shadow: 3px 5px 6px 0 rgba(0, 0, 0, 0.15)
+	ul
+		padding-top: 38px
+		li
+			display: inline
+			a
+				width: 10px
+				margin-left: 37px
+				font-family: Avenir-Light, sans-serif
+				color: #fff
+				font-size: 20.2px
+				position: relative
+				outline: none
+				&:hover
+					color: #fff
+					text-decoration: none
+				&:focus
+				  	color: #fff
+				  	text-decoration: none
+				&:after
+					position: absolute
+					top: 100%
+					left: 0
+					width: 100%
+					height: 2px
+					background: #fff
+					content: ''
+					opacity: 0
+					transition: opacity 0.3s, transform 0.3s
+					transform: translateY(10px)
+					-webkit-transition: opacity 0.3s, -webkit-transform 0.3s
+					-moz-transition: opacity 0.3s, -moz-transform 0.3s
+					-webkit-transform: translateY(10px)
+					-moz-transform: translateY(10px)
+				&:hover:after, &:focus:after
+					opacity: 1
+					color: #fff
+					transform: translateY(0px)
+					-webkit-transform: translateY(0px)
+					-moz-transform: translateY(0px)
+	.search
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		position: absolute
+		width: inherit
+		height: inherit
+		margin-right: 51px
+		input
+			background-color: #fff
+			opacity: 0.45
+			width: 175px
+			&:focus
+				opacity: 0.7
+		a
+			margin: 11px 30px 0 11px
+			color: #ffffff
+			border: 1px solid #373749
+			&:hover
+			  color: #cccccc
+
+section.about
+	div.container
+	  	div.about-header
+	  		display: flex
+		  	justify-content: center
+	  		align-items: center
+	  		margin-top: 90px
+	  		padding-bottom: 45px
+		  	margin-bottom: 50px
+	  		border-bottom: 2px dotted $accent
+		  	width: 1000px
+	  		h2
+	  			margin-left: 19px
+	  			text-transform: uppercase
+	  			font-family: Avenir-Light, sans-serif
+	  			font-size: 29.17px
+	  			color: #373749
+
+
+section.about
+   	div.container
+   		div.about-content
+ 		  	div.col-lg-6
+ 			  	img
+ 				  	margin-bottom: 24px
+ 			div.col-lg-6
+ 				p
+ 					font-family: Avenir-Light, sans-serif
+ 					color: #373749
+ 					text-align: justify
+ 					font-size: 17.45px
+ 					line-height: 1.1
+ 					margin-bottom: 14px
+
+.h3, h3
+	font-family: Avenir-Light, serif
+	color: #373749
+	font-size: 17.45px
+
+section.about
+	div.open-menu
+		position: absolute
+		top: 88px
+		width: 212px
+		display: flex
+		z-index: 5
+		flex-direction: column
+		transition: all 0.5s ease-in-out
+
+
+
+.open-menu
+  	height: 5938px
+  	background-color: #FFFFFF
+  	box-shadow: 3px 5px 6px 0 rgba(0, 0, 0, 0.15)
+  	transition: all 0.5s ease-in-out
+
+
+.open-menu
+  	.arrow-open, .menu-line
+		  display: none
+
+div.wrapper
+  	position: sticky
+  	top: 0
+  	div#simple-menu-img
+	  	margin-top: 27px
+	  	display: flex
+	  	justify-content: center
+
+div#simple-menu-left
+  	margin-top: 41px
+  	a
+	  	font-size: 20.83px
+	  	font-weight: 300
+	  	line-height: 33.333px
+	  	text-align: left
+	  	font-family: Avenir-Light, sans-serif
+	  	transition: all 0.5s ease-in-out
+	  	color: #023a5c
+	  	&:hover
+		  	text-decoration: none
+
+div#simple-menu-left
+  	ul
+  			border-bottom: 2px dotted $accent
+			width: 120px
+			margin-left: 40px
+			padding-bottom: 20px
+			margin-bottom: 20px
+			transition: all 0.5s ease-in-out
+
+
+div#simple-menu-left
+  	li
+	  	margin-left: -40px
+div#simple-menu-left
+  	li
+	  	transition: all 0.5s ease-in-out
+  	li:hover
+  			transform: translateX(15px)
+			font-weight: 700
+			transition: all 0.5s ease-in-out
+
+div.social-icon
+  	margin-left: 5px
+  	padding-top: 10px
+
+a.social-icon
+  	display: flex
+a.facebook
+  	width: 15px
+a.linked
+  	margin-top: 22px
+  	width: 30px
+
+
+
+#arrow-menu-close
+  	position: absolute
+  	top: calc(50vh - 88px)
+  	margin-left: 180px
+  	z-index: 3
+
+
+.closed-menu
+  	height: 5938px
+  	background-color: #FFFFFF
+  	box-shadow: 3px 5px 6px 0 rgba(0, 0, 0, 0.15)
+  	transition: all 0.5s ease-in-out
+  	position: absolute
+  	top: 88px
+  	width: 60px
+  	display: flex
+  	z-index: 5
+  	flex-direction: column
+  	.menu-wrapper, .arrow-close
+	  	display: none
+	  	padding: 0
+	  	margin: 0
+
+
+.closed-menu
+	.arrow-open
+		display: flex
+		flex-direction: column
+		justify-content: center
+		height: calc(100vh - 88px)
+		align-items: center
+
+
+
+.arrow-open:hover
+  	text-decoration: none
+
+.closed-menu
+	.menu-line
+	  	display: flex
+	  	justify-content: center
+	  	p
+		  	font-family: Avenir-Light, sans-serif
+		  	font-size: 17px
+		  	color: #313748
+
+
+.newsletter
+	position: absolute
+	top: 90%
+	z-index: 5
+	display: flex
+	width: 1000px
+	justify-content: center
+	align-items: center
+	#newsletter-query
+		display: flex
+		align-items: center
+		margin-right: 8px
+		padding: 3px 10px
+		background-color:  #f7f7f7
+		width: 855px
+		height: 55px
+		p
+			padding: 0 20px
+			margin: 0
+			font-family: Avenir-Light, sans-serif
+			color:  #023a5c
+			font-size: 20.83px
+			font-weight: 300
+		input
+			width: 380px
+			border-color: #023a5c
+
+	#newsletter-subscribe
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color:  #ffffff
+		width: 136px
+		height: 55px
+		button
+			font-family: Avenir-Light, sans-serif
+			color:  #023a5c
+			font-size: 20.83px
+			font-weight: 300
+
+.wrapper-owl-dots
+	width: 1000px
+
+section.about
+	.owl-carousel
+		.owl-nav
+			display: none
+		.owl-dots
+			width: 1000px
+			bottom: 108px
+			text-align: right
+			position: absolute
+			z-index: 6
+			.active
+				background-color: #023a5c
+			button
+				background-color: #FFFFFF
+				width: 40px
+				height: 15px
+				&:nth-child(n+2)
+					margin-left: 8px
+				&:hover
+					background-color: #023a5c
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next
+	position: absolute
+	z-index: 2
+	span
+		font-size: 0
+
+.about-item
+	width: 100vw
+	height: calc(100vh - 88px)
+	display: flex
+	align-items: center
+	h1
+		font-family: Avenir-Light, sans-serif
+		color:  #ffffff
+		font-size: 51.3px
+		font-weight: 400
+		text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.75)
+		span
+			text-transform: uppercase
+	h3
+		a
+			font-family: Avenir-Light, sans-serif
+			color:  #ffffff
+			font-size: 25px
+			font-weight: 400
+			text-align: center
+			text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.75)
+			&:hover
+				text-decoration: none
+
+.about-details
+	align-items: flex-end
+	margin-top: 30px
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+
+.header-firm-name
+	align-items: center
+	margin-left: 280px
+
+#carousel-item-1
+	background: url("../img/header-img-1.png") no-repeat center center
+	-webkit-background-size: cover
+	background-size: cover
+	div
+		display: flex
+		flex-direction: column
+
+
+
+#carousel-item-2
+	background: url("../img/header-img-2.png") no-repeat center center
+	-webkit-background-size: cover
+	background-size: cover
+	div
+		display: flex
+		flex-direction: column
+
+#carousel-item-3
+	background: url("../img/header-img-3.png") no-repeat center center
+	-webkit-background-size: cover
+	background-size: cover
+	div
+		display: flex
+		flex-direction: column
+
+#carousel-item-4
+	background: url("../img/header-img-4.png") no-repeat center center
+	-webkit-background-size: cover
+	background-size: cover
+	div
+		display: flex
+		flex-direction: column
+
+
+section.industries
+	height: 980px
+	background-color: #023c5c
+
+div.industries-header
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 166px
+	color: #ffffff
+	margin-bottom: 25px
+	border-bottom: 2px dotted white
+
+div.industries-header
+	img
+		margin-right: 10px
+	h2
+		margin-left: 10px
+		text-transform: uppercase
+
+div.wrapper-industries
+	display: flex
+	flex-wrap: wrap
+
+div.industries-item
+	height: 150px
+	width: calc(950px/3)
+	padding: 0
+	margin-top: 25px
+	background-color: #FFFFFF
+	display: flex
+	align-items: center
+	justify-content: center
+	flex: 1 1 calc(950px/3)
+	-webkit-background-size: cover
+	background-size: cover
+	border: 1px solid transparent
+	&:after
+		content: ""
+		z-index: 1
+		height: 150px
+		width: calc(950px/3)
+		position: absolute
+		background: rgba(0,0,0,0.7)
+		transition: all 0.5s ease
+	&:hover:after
+		opacity: 0
+		transition: all 0.5s ease
+	h3
+		font-family: Avenir-Light, sans-serif
+		color:  #ffffff
+		font-size: 20.84px
+		z-index: 3
+		font-weight: 500
+		text-transform: uppercase
+
+
+div.industries-item:nth-child(1)
+	background-image: url("../img/industries-img-1.png")
+
+div.industries-item:nth-child(2)
+	margin: 25px 25px 0 25px
+	background-image: url("../img/industries-img-2.png")
+
+div.industries-item:nth-child(3)
+	background-image: url("../img/industries-img-3.png")
+
+div.industries-item:nth-child(4)
+	background-image: url("../img/industries-img-4.png")
+
+div.industries-item:nth-child(5)
+	margin: 25px 25px 0 25px
+	background-image: url("../img/industries-img-5.png")
+
+div.industries-item:nth-child(6)
+	background-image: url("../img/industries-img-6.png")
+
+div.industries-item:nth-child(7)
+	background-image: url("../img/industries-img-2.png")
+
+div.industries-item:nth-child(8)
+	margin: 25px 25px 0 25px
+	background-image: url("../img/industries-img-3.png")
+
+div.industries-item:nth-child(9)
+	background-image: url("../img/industries-img-4.png")
+
+div.industries-item-content
+	margin-top: 25px
+	width: calc(950px/3)
+	p
+		font-family: Avenir-Light, sans-serif
+		color:  #ffffff
+		font-size: 16.5px
+		font-weight: 500
+		text-align: justify
+		line-height: 1.3
+
+div.industries-item-content:nth-child(2)
+	margin: 25px 25px 0 25px
+
+
+section.products
+	height: 980px
+
+section.products
+	.products-header
+		height: 165px
+		margin-bottom: 40px
+		display: flex
+		align-items: center
+		justify-content: center
+		border-bottom: 2px dotted #023c5c
+		img
+			width: 56px
+			height: 46px
+			padding-right: 10px
+		h2
+			font-family: Avenir-Light, sans-serif
+			color:  #023a5c
+			padding-left: 10px
+			font-size: 27.87px
+			font-weight: 300
+			text-transform: uppercase
+
+section.products
+	.products-content
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 56px
+		p
+			font-family: Avenir-Light, sans-serif
+			color:  #023a5c
+			font-size: 21.72px
+			font-weight: 600
+			line-height: 1.4
+			text-align: justify
+
+section.products .products-content div
+	width: calc(970px/2)
+
+section.products .products-content div:nth-child(2)
+	margin-left: 30px
+
+section.products .products-wrapper-item
+	display: flex
+	flex-wrap: wrap
+
+section.products
+	.products-item
+		width: 164px
+		height: 164px
+		margin: 44px 22px 0 22px
+		background-color: #023c5c
+		border-radius: 90px
+		display: flex
+		justify-content: center
+		align-items: center
+		box-shadow: inset 5px 5px 5px #000000
+		h3
+			font-family: Avenir-Light, sans-serif
+			color:  #ffffff
+			font-size: 21px
+			margin: 0
+			font-weight: 500
+			text-align: center
+			text-transform: uppercase
+			span
+				text-transform: none
+
+section.products .products-item:nth-child(1)
+	margin-left: 0
+
+section.products .products-item:nth-child(5)
+	margin-right: 0
+
+section.products .products-item:nth-child(6)
+	margin-left: 0
+
+section.products .products-item:nth-child(10)
+	margin-right: 0
+
+
+section.services
+	height: 980px
+	background-color: #023c5c
+
+section.services
+	.services-header
+		height: 165px
+		display: flex
+		justify-content: center
+		align-items: center
+		border-bottom: 2px dotted white
+		img
+			margin-right: 10px
+		h2
+			font-family: Avenir-Light, sans-serif
+			color:  #ffffff
+			font-size: 29.17px
+			font-weight: 300
+			text-transform: uppercase
+			margin-left: 10px
+
+section.services
+	.services-wrapper-item
+		height: 400px
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin-top: 30px
+		h3
+			font-family: Avenir-Light, sans-serif
+			color:  #ffffff
+			font-size: 16.67px
+			font-weight: 400
+			text-transform: uppercase
+	.services-content
+		display: flex
+		flex-wrap: wrap
+		margin-top: 20px
+		div
+			width: calc(970px/2)
+			&:nth-child(1)
+				margin-right: 15px
+			&:nth-child(2)
+				margin-left: 15px
+			p
+				font-family: Avenir-Light, sans-serif
+				color:  #ffffff
+				font-size: 20.83px
+				font-weight: 400
+				text-align: justify
+				line-height: 1.3
+
+
+section.services .services-wrapper-item > div
+	width: calc(1000px/3)
+	display: flex
+	justify-content: center
+
+
+section.services
+	.services-wrapper-column
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin: 10px 0
+		justify-content: center
+		.services-wrapper
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			h3
+				margin-top: 15px
+				text-align: center
+		.services-wrapper-2
+			margin-top: 110px
+
+div#service-wrapper-5
+	margin-top: 140px
+
+section.news
+	height: 987px
+	.owl-carousel .owl-stage-outer
+		width: 835px
+		margin: 0 auto
+
+	.owl-carousel .owl-nav button.owl-prev
+		margin-top: -210px
+		width: 26px
+		height: 42px
+		background-image: url("../img/news-arrow-left.png")
+
+	.owl-carousel .owl-nav button.owl-next
+		margin-top: -210px
+		margin-left: 974px
+		width: 26px
+		height: 42px
+		background-image: url("../img/news-arrow-right.png")
+	.news-header
+		height: 165px
+		display: flex
+		justify-content: center
+		align-items: center
+		border-bottom: 2px dotted #023c5c
+		img
+			margin-right: 10px
+		h2
+			font-family: Avenir-Light, sans-serif
+			color:  #023c5c
+			font-size: 29.17px
+			font-weight: 300
+			text-transform: uppercase
+			margin-left: 10px
+	.news-content
+		margin-top: 135px
+		display: flex
+		align-items: center
+		justify-content: center
+		.news-item
+			div
+				margin-top: 35px
+				.news-date
+					font-family: Avenir-Light, sans-serif
+					color:  #023a5c
+					font-size: 13.72px
+					font-weight: 300
+					text-align: left
+					margin-bottom: 13px
+				.news-content-header
+					font-family: Avenir-Light, sans-serif
+					color:  #023a5c
+					font-size: 13.72px
+					font-weight: 300
+					text-align: justify
+					margin-bottom: 30px
+				p
+					font-family: Avenir-Light, sans-serif
+					color:  #023a5c
+					font-size: 13.72px
+					font-weight: 300
+					text-align: left
+					margin-bottom: 17px
+				a
+					font-family: Avenir-Light, sans-serif
+					color:  #023a5c
+					font-size: 13.72px
+					font-weight: 300
+					text-align: left
+					border-top: 2px dotted #023a5c
+					padding: 10px 10px 0 0
+
+
+
+section.contact
+	height: 980px
+	background-color: #023c5c
+	.container
+		width: 840px
+	.contact-header
+		height: 165px
+		display: flex
+		justify-content: center
+		align-items: center
+		border-bottom: 2px dotted #FFFFFF
+		img
+			margin-right: 10px
+		h2
+			font-family: Avenir-Light, sans-serif
+			color:  #FFFFFF
+			font-size: 29.17px
+			font-weight: 300
+			text-transform: uppercase
+			margin-left: 10px
+	.contact-content
+		margin-top: 45px
+		padding-bottom: 45px
+		border-bottom: 2px dotted #FFFFFF
+		.owl-carousel .owl-stage-outer
+			width: 840px
+			margin: 0 auto
+
+		.owl-stage
+			width: 840px
+			justify-content: space-between
+			display: flex
+			align-items: center
+			.owl-item
+				width: calc(840px/3)
+		p
+			font-family: Avenir-Light, sans-serif
+			color:  #ffffff
+			font-size: 16.67px
+			font-weight: 300
+			text-align: left
+			line-height: 1.3
+			&:nth-child(n+2)
+				margin-top: 20px
+	.contact-form
+		display: flex
+		justify-content: space-between
+		margin-top: 45px
+		padding-bottom: 45px
+		border-bottom: 2px dotted #FFFFFF
+		p,label,a,h4
+			color: #FFFFFF
+		h4
+			font-family: Avenir-Light, sans-serif
+			color:  #ffffff
+			font-size: 16.67px
+			font-weight: 300
+			text-transform: uppercase
+		div#contact-form-wrapper-1
+			width: 415px
+			p,label
+				font-family: Avenir-Light, sans-serif
+				color:  #ffffff
+				font-size: 16.67px
+				font-weight: 300
+			h4
+				text-align: end
+				margin-bottom: 28px
+			button#send
+			  	font-family: Avenir-Light, sans-serif
+			  	color: rgba(7, 61, 95, 0.36)
+			  	font-size: 16.67px
+			  	font-weight: 300
+			div
+				&:nth-child(2)
+					form
+						width: 415px
+						input,textarea
+							width: 100%
+							text-align: end
+							font-family: Avenir-Light, sans-serif
+							color:  rgba(7, 61, 95, 0.36)
+							font-size: 16.67px
+							font-weight: 300
+							padding-right: 8px
+							&:nth-child(n+2)
+								margin-top: 13px
+							&:nth-last-child()
+								height: 85px
+							&:focus
+								text-align: start
+						textarea
+							resize: none
+				&:nth-child(3)
+					width: inherit
+					height: 50px
+					display: flex
+					align-items: stretch
+					justify-content: space-between
+					margin-top: 7px
+					div
+						&:nth-child(1)
+							p
+								margin-bottom: 0
+							div
+								display: flex
+								width: 278px
+								input
+									width: 18px
+									height: 18px
+									margin-right: 10px
+									&:nth-child(3)
+										margin-left: 18px
+						&:nth-child(2)
+							button
+								width: 117px
+								height: 50px
+								background-color: #FFFFFF
+
+		div#contact-form-wrapper-2
+		  	width: 120px
+		  	div#contact-img-wrapper
+			  	display: flex
+			  	flex-direction: column
+			  	align-items: center
+			  	width: inherit
+			  	margin-top: 28px
+			  	height: 315px
+			  	justify-content: space-between
+
+
+		div#contact-form-wrapper-3
+			width: 210px
+			div
+				margin-top: 22px
+				p
+					font-family: Avenir-Light, sans-serif
+					color:  #ffffff
+					font-size: 16.67px
+					font-weight: 300
+					line-height: 1.3
+					&:nth-child(2)
+						margin-top: 50px
+						margin-bottom: 82px
+	div#toUp
+		display: flex
+		justify-content: center
+		margin-top: 20px
+		a
+			font-family: Avenir-Light, sans-serif
+			color:  #ffffff
+			font-size: 16.67px
+			font-weight: 300
+			line-height: 25px
+
+footer
+  z-index: 7
+  position: relative
+  height: 145px
+  background-color: #FFFFFF
+  border-top: none
+  display: flex
+  align-items: center
+  div.container
+    width: 840px
+    //#footer-carousel
+    //  div > img
+    //      &:nth-child(1)
+    //        width: 211px
+    //      &:nth-child(2)
+    //        width: 98px
+    //      &:nth-child(3)
+    //        width: 200px
+    //      &:nth-child(4)
+    //        width: 116px
+    //      &:nth-child(5)
+    //        width: 102px
+
+  .owl-carousel .owl-stage-outer
+    width: 835px
+    margin: 0 auto
+
+  .owl-stage
+    display: flex
+    align-items: center
+
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next
+    position: absolute
+    z-index: 2
+    span
+      font-size: 0
+
+  .owl-carousel .owl-nav button.owl-prev
+    margin-left: -70px
+    bottom: 50px
+    width: 26px
+    height: 42px
+    background-image: url("../img/news-arrow-left.png")
+
+  .owl-carousel .owl-nav button.owl-next
+    bottom: 50px
+    margin-left: 884px
+    width: 26px
+    height: 42px
+    background-image: url("../img/news-arrow-right.png")
+
+  .owl-carousel
+    .owl-dots
+      display: none
+
+@import "media" // Always at the end

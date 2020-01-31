@@ -1,0 +1,1328 @@
+@import "vars"
+
+/* Medium Devices, Laptops*/
+@media only screen and (max-width: 1400px)
+
+  //----------------------------header---------------------------
+  .container
+    width: 1000px
+    transition: margin-left 0.5s linear
+
+
+  nav
+    height: 80px
+    a
+      img
+        padding: 12px 24px
+    ul
+      padding-top: 30px
+      li
+        a
+          margin-left: 40px
+          font-size: 19px
+    .search
+      margin-right: 0
+      a
+        position: relative
+        margin-right: 14px
+      input
+        position: absolute
+        width: 180px
+        top: 80px
+        z-index: 3
+        background-color: $accent
+        opacity: 0.9
+        color: #ffffff
+        border: 1px dotted #FFFFFF
+        &:focus
+          opacity: 0.7
+  //---------------------------------------------------------------
+
+  //----------------------------section about----------------------
+  section.about
+    .item
+      width: 100vw
+      height: calc(100vh - 80px)
+    div.container
+      div.about-header
+        margin-top: 85px
+        padding-bottom: 25px
+        margin-bottom: 35px
+
+  section.about
+    div.container
+      div.about-content
+        h3
+          margin-bottom: 20px
+
+  section.about
+    div.open-menu
+      top: 80px
+      height: 5270px
+      width: 200px
+
+  div#simple-menu-left
+    ul
+      border-bottom: 2px dotted $accent
+      width: 120px
+      margin-left: 35px
+      padding-bottom: 20px
+      margin-bottom: 20px
+
+  div.social-icon
+    margin-left: 40px
+    padding-top: 10px
+
+  .closed-menu
+    top: 80px
+    height: 5270px
+    width: 50px
+
+  .closed-menu
+    .arrow-open
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      height: calc(100vh - 80px)
+
+  .closed-menu
+    .menu-line
+      display: flex
+      justify-content: center
+
+  #arrow-menu-close
+    position: absolute
+    top: calc(50vh - 88px)
+    margin-left: 175px
+
+  div.wrapper
+    z-index: 10
+    .menu-wrapper
+      z-index: 10
+    div#simple-menu-img
+      margin-top: 15px
+
+  div#simple-menu-left
+    margin-top: 26px
+    margin-left: 0
+    z-index: 10
+    a
+      font-size: 19px
+      line-height: 28px
+      transition: all 0.5s ease-in-out
+
+  div#simple-menu-left
+    ul
+      padding-bottom: 10px
+      margin-bottom: 10px
+
+  div.social-icon
+    padding-top: 7px
+
+  a.linked
+    margin-top: 15px
+
+  section.about
+    .owl-carousel
+      z-index: 2
+      .owl-dots
+        bottom: 75px
+
+  //---------------------------------------------------------------
+
+  //----------------------------section industries-----------------
+  div.industries-header
+    height: 150px
+  //---------------------------------------------------------------
+
+  //----------------------------section products-------------------
+  section.products
+    height: 900px
+    .products-header
+      margin-bottom: 80px
+      h2
+        font-size: 27.7px
+
+  section.products
+    .products-content
+      margin-bottom: 40px
+      p
+        font-size: 19.72px
+        line-height: 1.3
+  //---------------------------------------------------------------
+
+  //----------------------------section service--------------------
+  section.services
+    height: 900px
+    .services-header
+      height: 150px
+    .services-wrapper-item
+      height: 380px
+    .services-content
+      margin-top: 20px
+      div
+        p
+          font-size: 20px
+          font-weight: 400
+          line-height: 1.3
+  //---------------------------------------------------------------
+
+  //----------------------------section news-----------------------
+  section.news
+    height: 900px
+    .news-content
+      width: 800px
+      margin: 135px auto 0 auto
+
+  section.news
+    .owl-carousel
+      .owl-stage-outer
+        width: auto
+
+  section.news
+    .owl-carousel .owl-nav button.owl-prev
+      margin-left: -96px
+
+    .owl-carousel .owl-nav button.owl-next
+      margin-left: 870px
+
+
+  //---------------------------------------------------------------
+
+  //----------------------------section contact--------------------
+  section.contact
+    height: 900px
+    .contact-header
+      height: 150px
+    .contact-content
+      margin-top: 35px
+      padding-bottom: 35px
+    .contact-form
+      margin-top: 35px
+      padding-bottom: 35px
+      div#contact-form-wrapper-1
+        h4
+          margin-bottom: 20px
+      div#contact-form-wrapper-2
+        div#contact-img-wrapper
+          margin-top: 20px
+          height: 295px
+          justify-content: space-between
+
+      div#contact-form-wrapper-3
+        width: 210px
+        div
+          margin-top: 15px
+    div#toUp
+      margin-top: 10px
+  //---------------------------------------------------------------
+
+  //----------------------------footer-----------------------------
+  footer
+    z-index: 5
+    position: relative
+    height: 145px
+    background-color: #FFFFFF
+    border-top: none
+    #footer-carousel
+      height: 145px
+
+
+    .owl-carousel .owl-stage-outer
+      width: 835px
+      height: 145px
+      margin: 0 auto
+      display: flex
+
+    .owl-stage
+      display: flex
+      align-items: center
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next
+      position: absolute
+      z-index: 2
+      span
+        font-size: 0
+
+    .owl-carousel .owl-nav button.owl-prev
+      margin-left: -70px
+      bottom: 50px
+      width: 26px
+      height: 42px
+      background-image: url("../img/news-arrow-left.png")
+
+    .owl-carousel .owl-nav button.owl-next
+      bottom: 50px
+      margin-left: 884px
+      width: 26px
+      height: 42px
+      background-image: url("../img/news-arrow-right.png")
+
+    .owl-carousel
+      .owl-dots
+        display: none
+  //---------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1100px)
+
+  //----------------------------header---------------------------
+  .container
+    width: 600px
+    transition: margin-left 0.5s linear
+
+
+  nav
+    height: 85px
+    text-align: center
+    border-bottom: 10px solid rgba(2,58,92,0.5)
+    background-image: none
+    .container
+      width: 600px
+      a
+        img
+          display: none
+      ul
+        width: 100vw
+        padding-top: 30px
+        padding-left: 0
+        li
+          a
+            margin-left: 0
+            font-size: 16.66px
+            font-weight: 300
+            margin-right: 39px
+          &:nth-child(6)
+            a
+              margin-right: 0
+    .search
+      display: none
+  //---------------------------------------------------------------
+
+  //----------------------------section about----------------------
+  section.about
+    div.container
+      div.about-content
+        h3
+          margin-bottom: 20px
+
+  section.about
+    div.open-menu
+      top: 0
+      height: 3110px
+      width: 116px
+
+  div.social-icon
+    margin-left: 40px
+    padding-top: 10px
+
+  .closed-menu
+    top: 0
+    height: 3110px
+    width: 17px
+
+  .closed-menu
+    .arrow-open
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      height: 100vh
+      .menu-line
+        display: none
+
+  .closed-menu
+    .menu-line
+      display: flex
+      justify-content: center
+
+  #arrow-menu-close
+    position: absolute
+    top: calc(100vh/2 - 30px)
+    margin-left: 96px
+
+  div.wrapper
+    div#simple-menu-img
+      margin-top: 0
+      padding: 11px 14px
+      height: 85px
+      img.for-desktop
+        display: none
+      img.for-tablet
+        display: block
+
+  div#simple-menu-left
+    margin-top: 20px
+    a
+      font-size: 14.6px
+      font-weight: 300
+      line-height: 22px
+      transition: all 0.5s ease-in-out
+
+  div#simple-menu-left
+    ul
+      border: none
+      margin-left: 18px
+      padding-bottom: 4px
+      margin-bottom: 4px
+      .border-line
+        border-bottom: 1px dotted $accent
+        width: 35px
+        cursor: auto
+        margin-top: 10px
+        &:hover
+          transform: none
+      li:hover
+        transform: none
+      &:nth-child(1)
+        li.border-line
+          margin-top: 0
+
+  div.social-icon
+    padding-top: 7px
+
+  a.linked
+    margin-top: 15px
+
+  section.about
+    .owl-carousel
+      z-index: 2
+      .owl-dots
+        display: none
+
+  .header-firm-name
+    align-items: end
+    margin-left: 170px
+    h1
+      font-size: 34px
+      text-shadow: 1px 2px 5px #000000
+      margin-top: 120px
+
+  section.about
+    #about-carousel
+      .about-details
+        display: none
+
+  .about-item
+    width: 100vw
+    height: calc(100vh - 88px)
+    display: flex
+    align-items: center
+
+  div.social-icon
+    margin-left: 18px
+    display: flex
+    a:nth-child(1)
+      margin-top: 12px
+      margin-right: 25px
+
+  .newsletter
+    bottom: 5vh
+    width: 600px
+    #newsletter-query
+      margin-right: 8px
+      padding: 1px 8px
+      width: 485px
+      height: 42px
+      img
+        width: 39px
+        height: 34px
+      p
+        padding: 0 20px
+        margin: 0
+        font-size: 16.67px
+      .for-desktop
+        display: none
+      .for-tablet
+        display: inline-block
+      input
+        width: 288px
+
+    #newsletter-subscribe
+      width: 100px
+      height: 42px
+      button
+        font-size: 16.67px
+        font-weight: 300
+
+  //---------------------------------------------------------------
+
+  //----------------------------section industries-----------------
+  section.industries
+    height: 445px
+
+  div.industries-header
+    margin-bottom: 17px
+    img
+      margin-right: 5px
+      width: 46px
+      height: 41px
+    h2
+      font-size: 16.66px
+      margin-left: 5px
+      text-transform: uppercase
+
+  div.industries-header
+    height: 77px
+
+  div.industries-item
+    height: 90px
+    margin-top: 0
+    flex: 1 1 calc(570px/3)
+    &:after
+      height: 90px
+      width: calc(570px/3)
+    h3
+      font-size:  12.42px
+
+  div.industries-item:nth-child(2)
+    margin: 0 15px
+    background-image: url("../img/industries-img-2.png")
+
+  div.industries-item:nth-child(4)
+    margin: 15px 0
+    background-image: url("../img/industries-img-4.png")
+
+  div.industries-item:nth-child(5)
+    margin: 15px 15px 0 15px
+    background-image: url("../img/industries-img-5.png")
+
+  div.industries-item:nth-child(6)
+    margin: 15px 0 0 0
+    background-image: url("../img/industries-img-6.png")
+
+  div.industries-item:nth-child(8)
+    margin: 0 15px
+    background-image: url("../img/industries-img-3.png")
+
+  div.industries-item-content
+    display: none
+  //---------------------------------------------------------------
+
+  //----------------------------section products-------------------
+  section.products
+    height: 445px
+    .container
+      div#products-wrapper-item-2
+          margin-top: 23px
+    .products-header
+      height: 77px
+      margin-bottom: 60px
+      img
+        width: 33px
+        height: 26px
+        padding-right: 5px
+      h2
+        padding-left: 5px
+        font-size: 16.66px
+
+  section.products
+    .products-content
+      display: none
+    .products-wrapper-item
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      flex: 1 1 100px
+      .products-item
+        margin: 0
+        width: 100px
+        height: 100px
+        h3
+          font-size: 12.81px
+  //---------------------------------------------------------------
+
+  //----------------------------section service--------------------
+  section.services
+    height: 445px
+    .services-header
+      height: 77px
+      img
+        width: 42px
+        height: 39px
+        margin-right: 5px
+      h2
+        margin-left: 5px
+        font-size: 16.67px
+
+    .services-wrapper-item
+      height: 300px
+      margin-top: 20px
+      div
+        width: 600px
+    .services-content
+      display: none
+
+  section.services
+    .services-wrapper-column
+      display: flex
+      flex-direction: row
+      margin: 0
+      .services-wrapper
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        img
+          width: 15%
+        h3
+          margin: 0 0 0 20px
+          text-align: left
+          font-size: 12.5px
+      #service-wrapper-5
+        margin-top: 0
+      .services-wrapper-2
+        margin-top: 0
+      &:nth-child(2)
+        .services-wrapper
+          img
+            width: 10%
+  //---------------------------------------------------------------
+
+  //----------------------------section news-----------------------
+  section.news
+    height: 445px
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next
+      position: absolute
+      z-index: 2
+      span
+        font-size: 0
+    .owl-carousel .owl-nav button.owl-prev
+      margin-top: -128px
+      margin-left: -50px
+      width: 15px
+      height: 25px
+      background-image: url("../img/news-arrow-left-tablet.png")
+
+    .owl-carousel .owl-nav button.owl-next
+      margin-top: -128px
+      margin-left: 534px
+      width: 15px
+      height: 25px
+      background-image: url("../img/news-arrow-right-tablet.png")
+    .news-header
+      height: 77px
+      img
+        width: 49px
+        height: 44px
+        margin-right: 5px
+      h2
+        margin-left: 5px
+        font-size: 16.67px
+    .news-content
+      width: 800px
+      margin: 135px auto 0 auto
+      .news-item
+        div
+          margin-top: 17px
+          .news-date
+            font-size: 12.5px
+            margin-bottom: 0
+          .news-content-header
+            font-size: 12.5px
+            margin-bottom: 20px
+          a
+            font-size: 12.5px
+            padding: 2px 0 0 0
+    .news-content
+      margin-top: 70px
+      width: 495px
+      .owl-stage-outer
+        width: 495px
+        div.item
+          img
+            width: 110px
+            height: 110px
+          div
+            p:first-child
+              display: none
+
+  section.news
+    .owl-carousel
+      .owl-stage-outer
+        width: auto
+
+  //---------------------------------------------------------------
+
+  //----------------------------section contact--------------------
+  section.contact
+    height: 445px
+    .container
+      width: 600px
+    .contact-header
+      height: 82px
+      img
+        width: 50px
+        height: 50px
+      h2
+        font-size: 20.52px
+    .contact-content
+      margin-top: 30px
+      padding-bottom: 30px
+      display: flex
+      justify-content: space-between
+      p
+        font-family: Avenir-Light, sans-serif
+        color:  #ffffff
+        font-size: 12.5px
+        font-weight: 300
+        text-align: left
+        line-height: 1.1
+        &:nth-child(n+2)
+          margin-top: 20px
+    .contact-form
+      display: flex
+      justify-content: start
+      margin-top: 30px
+      border: none
+      h4
+        font-size: 12.5px
+      div#contact-form-wrapper-1
+        width: 200px
+        div
+          display: none
+          &:nth-child(3)
+            display: none
+        h4
+          text-align: start
+          margin-bottom: 18px
+        p
+          display: block
+          font-family: Avenir-Light,sans-serif
+          color: #ffffff
+          font-size: 11.51px
+          font-weight: 300
+
+      div#contact-form-wrapper-2
+        display: none
+      div#contact-form-wrapper-3
+        width: 175px
+        div
+          margin-top: 15px
+          p
+            font-size: 12.5px
+            &:nth-child(2)
+              margin: 0 0
+          a
+            display: none
+    div#toUp
+      display: none
+  //---------------------------------------------------------------
+
+  //----------------------------footer-----------------------------
+  footer
+    z-index: 7
+    position: relative
+    height: 68px
+    background-color: #FFFFFF
+    border-top: none
+    #footer-carousel
+      height: 68px
+      width: 600px
+
+
+    .owl-carousel
+      .owl-stage-outer
+        width: 485px
+        height: 68px
+        margin: 0 auto
+        display: flex
+      .owl-nav
+        width: 600px
+
+    .owl-stage
+      display: flex
+      align-items: center
+
+    .owl-carousel .owl-nav button.owl-prev
+      margin-left: -10px
+      bottom: 23px
+      width: 15px
+      height: 25px
+      background-image: url("../img/news-arrow-left-tablet.png")
+
+    .owl-carousel .owl-nav button.owl-next
+      bottom: 23px
+      margin-left: 594px
+      width: 15px
+      height: 25px
+      background-image: url("../img/news-arrow-right-tablet.png")
+
+    .owl-carousel
+      .owl-dots
+        display: none
+
+  footer
+    .container
+      display: flex
+      justify-content: center
+  //---------------------------------------------------------------
+
+
+
+
+
+
+@media only screen and (max-width: 600px)
+
+  //----------------------------header---------------------------
+  .container
+    width: 288px
+
+
+  nav
+    height: 32px
+    text-align: center
+    border-bottom: none
+    background-image: none
+    .container
+      width: 288px
+      a
+        img
+          display: block
+          text-align: center
+          width: 130px
+          height: 88px
+      ul
+        display: none
+    .search
+      display: none
+  //---------------------------------------------------------------
+  //----------------------------section about----------------------
+  section.about
+    div.container
+      div.about-content
+        h3
+          display: none
+
+  section.about
+    div.open-menu
+      top: 32px
+      height: 3000px
+      width: 90px
+
+  div.social-icon
+    margin-left: 40px
+    padding-top: 10px
+
+  .closed-menu
+    top: 32px
+    height: 3000px
+    width: 15px
+
+  .closed-menu
+    .arrow-open
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      height: 100vh
+      .menu-line
+        display: none
+
+  .closed-menu
+    .menu-line
+      display: flex
+      justify-content: center
+
+  #arrow-menu-close
+    position: absolute
+    top: calc(100vh/2 - 45px)
+    margin-left: 70px
+
+  div.wrapper
+    div#simple-menu-img
+      display: none
+      img.for-desktop
+        display: none
+      img.for-tablet
+        display: block
+
+  div#simple-menu-left
+    margin-top: 20px
+    a
+      font-size: 12.5px
+      font-weight: 300
+      line-height: 22px
+      transition: all 0.5s ease-in-out
+
+  div#simple-menu-left
+    ul
+      border: none
+      margin-left: 12px
+      padding-bottom: 4px
+      margin-bottom: 4px
+      .border-line
+        border-bottom: 1px dotted $accent
+        width: 35px
+        cursor: auto
+        margin-top: 10px
+        &:hover
+          transform: none
+      li:hover
+        transform: none
+      &:nth-child(1)
+        li.border-line
+          margin-top: 0
+
+  div.social-icon
+    padding-top: 0
+
+  a.linked
+    margin-top: 15px
+
+  section.about
+    .owl-carousel
+      z-index: 2
+
+
+  section.about
+    #about-carousel
+      .about-details
+        display: none
+      .owl-dots
+        display: block
+        width: 288px
+        bottom: 18vh
+        button
+          width: 18px
+          height: 8px
+          &:nth-child(n+2)
+            margin-left: 4px
+
+  .about-item
+    width: 100vw
+    height: calc(100vh - 88px)
+    display: flex
+    align-items: center
+
+  div.social-icon
+    margin-left: 14px
+    display: flex
+    a:nth-child(2)
+      margin: 0
+    a:nth-child(1)
+      margin: 0 15px 0 0
+
+  .newsletter
+    margin-top: -70px
+    width: 288px
+    #newsletter-query
+      margin-right: 4px
+      padding: 1px 0
+      width: 224px
+      display: flex
+      justify-content: center
+      height: 28px
+      background-color: #FFFFFF
+      img
+        width: 25px
+        height: 22px
+      .for-desktop
+        display: none
+      .for-tablet
+        display: none
+      input
+        width: 174px
+        margin-left: 8px
+        padding-left: 10px
+
+    #newsletter-subscribe
+      width: 62px
+      height: 28px
+      button
+        font-size: 12.5px
+        font-weight: 300
+
+
+
+  #carousel-item-1 div
+    display: none
+
+  #carousel-item-2 div
+    display: none
+
+  #carousel-item-3 div
+    display: none
+
+  #carousel-item-4 div
+    display: none
+
+  //---------------------------------------------------------------
+  //----------------------------section industries-----------------
+  section.industries
+    height: 458px
+    div.industries-header
+      margin-bottom: 8px
+      img
+        margin-right: 5px
+        width: 40px
+        height: 34px
+      h2
+        font-size: 16.66px
+        margin-left: 5px
+        text-transform: uppercase
+
+    div.industries-header
+      height: 72px
+
+    div.industries-item
+      height: 115px
+      margin-top: 0
+      flex: 1 1 calc(272px/3)
+      &:after
+        height: 115px
+        width: calc(272px/3)
+      h3
+        font-size:  11.2px
+        text-align: center
+
+    div.industries-item:nth-child(2)
+      margin: 0 8px
+      background-image: url("../img/industries-img-2.png")
+
+    div.industries-item:nth-child(4)
+      width: calc(272px/3)
+      margin: 8px 0 8px 0
+      background-image: url("../img/industries-img-4.png")
+
+    div.industries-item:nth-child(5)
+      margin: 8px 7px 0 7px
+      background-image: url("../img/industries-img-5.png")
+
+    div.industries-item:nth-child(6)
+      margin: 8px 0 0 0
+      background-image: url("../img/industries-img-6.png")
+
+    div.industries-item:nth-child(7)
+      width: calc(272px/3)
+
+    div.industries-item:nth-child(8)
+      width: calc(272px/3)
+      margin: 0 8px
+      background-image: url("../img/industries-img-3.png")
+
+    div.industries-item:nth-child(9)
+      width: calc(272px/3)
+
+    div.industries-item-content
+      display: none
+  //---------------------------------------------------------------
+
+  //----------------------------section products-------------------
+  section.products
+    height: 460px
+    .container
+      div#products-wrapper-item-2
+        margin-top: 0
+    .products-header
+      height: 56px
+      margin-bottom: 10px
+      img
+        width: 25px
+        height: 21px
+        padding-right: 5px
+      h2
+        padding-left: 5px
+        font-size: 16.66px
+
+  section.products
+    .products-content
+      display: none
+    .products-wrapper-item
+      display: flex
+      justify-content: center
+      flex: 1 1 200px
+      .products-item
+        margin: 0
+        width: 200px
+        height: auto
+        background-color: transparent
+        box-shadow: none
+        h3
+          font-size: 16.67px
+          text-align: center
+          color: $accent
+          font-weight: 500
+          margin-top: 16px
+  //---------------------------------------------------------------
+
+  //----------------------------section service--------------------
+  section.services
+    height: 475px
+    .services-header
+      height: 63px
+      img
+        width: 35px
+        height: 32px
+        margin-right: 5px
+      h2
+        margin-left: 5px
+        font-size: 16.67px
+
+    .services-wrapper-item
+      height: 300px
+      margin-top: 20px
+      div
+        width: 288px
+    .services-content
+      display: none
+
+  section.services
+    .services-wrapper-column
+      display: flex
+      flex-direction: column
+      margin: 0
+      .services-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-bottom: 20px
+        img
+          width: 10%
+        h3
+          margin: 7px
+          text-align: center
+          font-size: 16px
+      #service-wrapper-5
+        margin-top: 0
+      .services-wrapper-2
+        margin-top: 0
+      &:nth-child(2)
+        .services-wrapper
+          img
+            width: 10%
+  //---------------------------------------------------------------
+
+  //----------------------------section news-----------------------
+  section.news
+    height: 445px
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next
+      position: absolute
+      z-index: 2
+      span
+        font-size: 0
+    .owl-carousel .owl-nav button.owl-prev
+      margin-top: -230px
+      margin-left: 0
+      width: 21px
+      height: 34px
+      background-image: url("../img/news-arrow-left.png")
+      background-size: cover
+
+    .owl-carousel .owl-nav button.owl-next
+      margin-top: -230px
+      margin-left: 266px
+      width: 21px
+      height: 34px
+      background-image: url("../img/news-arrow-right.png")
+      background-size: cover
+    .news-header
+      height: 65px
+      img
+        width: 36px
+        height: 32px
+        margin-right: 5px
+      h2
+        margin-left: 5px
+        font-size: 16.67px
+    .news-content
+      width: 288px
+      margin: 35px auto 0 auto
+      .news-item
+        width: 288px
+        display: flex
+        flex-direction: column
+        align-items: center
+        div
+          margin-top: 17px
+          .news-date
+            font-size: 12.5px
+            margin-bottom: 10px
+            text-align: center
+          .news-content-header
+            font-size: 12.5px
+            text-align: center
+            margin-bottom: 20px
+          .for-mobile
+            display: block
+            width: 288px
+            height: 85px
+            z-index: 10
+            text-align: justify
+            font-family: Avenir-Light, sans-serif
+            color:  #023a5c
+            font-size: 12.5px
+            font-weight: 300
+          a
+            display: none
+  section.news
+    .owl-carousel
+      .owl-stage-outer
+        width: 288px
+        .owl-stage
+          width: 288px
+          div
+            img
+              text-align: center
+
+  //---------------------------------------------------------------
+
+  //----------------------------section contact--------------------
+  section.contact
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next
+      position: absolute
+      z-index: 2
+      span
+        font-size: 0
+
+  section.contact
+    .owl-carousel
+      .owl-stage-outer
+        width: 288px
+        .owl-stage
+          width: 288px
+          div
+            img
+              text-align: center
+  .contact-content
+    margin-top: 45px
+    padding-bottom: 45px
+    border-bottom: 2px dotted #FFFFFF
+    .owl-carousel .owl-stage-outer
+      width: 840px
+      margin: 0 auto
+
+    .owl-stage
+      width: 840px
+      justify-content: space-between
+      display: flex
+      align-items: center
+      .owl-item
+        width: calc(840px/3)
+    p
+      font-family: Avenir-Light, sans-serif
+      color:  #ffffff
+      font-size: 16.67px
+      font-weight: 300
+      text-align: left
+      line-height: 1.3
+      &:nth-child(n+2)
+        margin-top: 20px
+
+  section.contact
+    .contact-content
+      display: flex
+      justify-content: center
+      margin-top: 8px
+      padding-bottom: 8px
+      border-bottom: 2px dotted #FFFFFF
+      .container
+        display: none
+
+    .contact-form
+      display: flex
+      justify-content: start
+      margin-top: 30px
+      border: none
+      h4
+        font-size: 12.5px
+      div#contact-form-wrapper-1
+        width: 200px
+        div
+          display: none
+          &:nth-child(3)
+            display: none
+        h4
+          text-align: start
+          margin-bottom: 18px
+        p
+          display: block
+          font-family: Avenir-Light,sans-serif
+          color: #ffffff
+          font-size: 11.51px
+          font-weight: 300
+
+      div#contact-form-wrapper-2
+        display: none
+      div#contact-form-wrapper-3
+        width: 175px
+        div
+          margin-top: 15px
+          p
+            font-size: 12.5px
+            &:nth-child(2)
+              margin: 0 0
+          a
+            display: none
+    div#toUp
+      display: none
+
+  //---------------------------------------------------------------
+
+  //----------------------------footer-----------------------------
+  footer
+    z-index: 7
+    position: relative
+    height: 80px
+    background-color: #FFFFFF
+    border-top: none
+    #footer-carousel
+      height: 80px
+      width: 288px
+
+
+    .owl-carousel
+      .owl-stage-outer
+        width: 145px
+        height: 80px
+        margin: 0 auto
+        display: flex
+      .owl-nav
+        width: 288px
+
+    .owl-stage
+      display: flex
+      align-items: center
+      .owl-items
+        display: flex
+        justify-content: center
+        width: 145px
+
+    .owl-carousel .owl-nav button.owl-prev
+      margin-left: -10px
+      bottom: 23px
+      width: 15px
+      height: 25px
+      background-image: url("../img/news-arrow-left-tablet.png")
+
+    .owl-carousel .owl-nav button.owl-next
+      bottom: 23px
+      margin-left: 283px
+      width: 15px
+      height: 25px
+      background-image: url("../img/news-arrow-right-tablet.png")
+
+    .owl-carousel
+      .owl-dots
+        display: none
+
+  footer
+    .container
+      display: flex
+      justify-content: center
+  //---------------------------------------------------------------
